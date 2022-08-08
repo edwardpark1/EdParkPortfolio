@@ -70,8 +70,8 @@
 		</section>
 		<section id="projects">
 			<h2>Projects</h2>
-			<section class="flex projects-panel">
-				<section class="border-Accent project">
+			<div class="flex projects-panel">
+				<article class="border-Accent project">
 					<h4 class="border-Accent-Header">Project 1</h4>
 					<span class="project-coming-soon">COMING SOON!!!</span>
 					<img class="project-image" src="assets/img/projectPlaceholder.jpg" alt="Project 1">
@@ -79,8 +79,8 @@
 						<li class="interact"><a href="#">VIEW LIVE</a></li>
 						<li class="interact"><a href="#">VIEW CODE</a></li>
 					</ul>
-				</section>
-				<section class="border-Accent project">
+				</article>
+				<article class="border-Accent project">
 					<h4 class="border-Accent-Header">Project 2</h4>
 					<span class="project-coming-soon">COMING SOON!!!</span>
 					<img class="project-image" src="assets/img/projectPlaceholder.jpg" alt="Project 2">
@@ -88,8 +88,8 @@
 						<li class="interact"><a href="#">VIEW LIVE</a></li>
 						<li class="interact"><a href="#">VIEW CODE</a></li>
 					</ul>
-				</section>
-				<section class="border-Accent project">
+				</article>
+				<article class="border-Accent project">
 					<h4 class="border-Accent-Header">Project 3</h4>
 					<span class="project-coming-soon">COMING SOON!!!</span>
 					<img class="project-image" src="assets/img/projectPlaceholder.jpg" alt="Project 3">
@@ -97,9 +97,9 @@
 						<li class="interact"><a href="#">VIEW LIVE</a></li>
 						<li class="interact"><a href="#">VIEW CODE</a></li>
 					</ul>
-					</section>	
-				</section>
-			</section>
+				</article>	
+			</div>
+		</section>
 		<section id="process">
 			<h2>The Process</h2>	
 			<section class="centered-content-body process-panel flex">
@@ -151,6 +151,8 @@
 					<input class="contact-field" id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####">
 					<label class="contact-field" for="message">* Message:</label>
 					<textarea class="contact-field" id="message" name="message" rows="3" required></textarea>
+					<span class="contact-field">* Recaptcha: </span>
+					<div id="recaptchaRequired"></div>
 					<div class="recaptcha" data-netlify-recaptcha="true"></div>
 					<button class="interact" type="submit">Submit Message</button>
 				</form>
