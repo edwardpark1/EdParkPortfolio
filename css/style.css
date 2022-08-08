@@ -525,7 +525,7 @@ header a:hover {
 }
 
 .recaptcha {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .project-coming-soon {
@@ -563,6 +563,8 @@ header a:hover {
   background: white;
   font-weight: 700;
   font-size: 1.25rem;
+  font-style: italic;
+  padding: .5rem;
 }
 
 @-webkit-keyframes textclip {
