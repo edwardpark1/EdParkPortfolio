@@ -27,14 +27,14 @@ function validateSubmission() {
   const reCaptchaPrompt = document.querySelector('#recaptchaRequired');
 
   if (isRecaptchaChecked) { 
-    alert("VALIDATION RETURNED TRUE");
+    // alert("VALIDATION RETURNED TRUE");
     reCaptchaPrompt.innerHTML = "";
     reCaptchaPrompt.style.display = "none";
     return true;
   } else {
-    alert("VALIDATION RETURNED FALSE");
-    reCaptchaPrompt.style.display = "block";
-    reCaptchaPrompt.innerHTML = "<span>Please complete reCAPTCHA</span>";
+    // alert("VALIDATION RETURNED FALSE");
+    reCaptchaPrompt.style.display = "inline-block";
+    reCaptchaPrompt.innerHTML = "<span>*Please complete reCAPTCHA*</span>";
     return false;
   }
 }
