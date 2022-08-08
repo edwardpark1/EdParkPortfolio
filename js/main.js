@@ -22,6 +22,21 @@ function resizeToggleMenu() {
     }
 }
 
+function validateSubmission() {
+  const isRecaptchaChecked = (grecaptcha.getResponse()) ? true : false;
+  const reCaptchaPrompt = document.querySelector('#recaptchaRequired');
+
+  if (isRecaptchaChecked) { 
+    reCaptchaPrompt.innerHTML = "";
+    reCaptchaPrompt.style.display = "none";
+    return true;
+  } else {
+    reCaptchaPrompt.style.display = "block";
+    reCaptchaPrompt.innerHTML = "<span>Please complete reCAPTCHA</span>";
+    return false;
+  }
+}
+
 const introPhrases = ['Hello! My name is Ed.',
                     'Welcome to the site!', 
                     'Have an awesome day!'];
