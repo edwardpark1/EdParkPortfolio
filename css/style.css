@@ -1,0 +1,660 @@
+/******************************************
+/* CSS
+/*******************************************/
+*{
+  box-sizing: border-box;
+}
+
+/*Clearfix technique*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+ul {
+  padding: 0;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  font-size: 62.5%;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  color: #F4EAE5;
+  background: #000A37;
+  background: linear-gradient(#000A37, #000F52, #000A37);
+}
+
+body > *,
+.border-Accent-Header {
+  border-bottom: 4px solid #2D9A92;
+}
+
+body > section {
+  margin: 40px 30px 20px 30px;
+  padding: 40px 0;
+}
+
+body > main {
+  padding: 50px 30px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;  
+  display: -webkit-flex; 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+/*---Border Style---*/
+.border-Accent {
+  margin: 50px 20px;
+  background-color: #000A37;
+  position: relative;
+  border: 3px solid #2D9A92;
+  min-width: 250px;
+
+}
+
+.border-Accent:before,
+.border-Accent:after {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 35%;
+  background: #2D9A92;
+  background: linear-gradient(to top right, #2D9A92, #D2DEC8, #2D9A92);
+  z-index: -1;
+}
+
+.border-Accent:before {
+  top: -15px;
+  left: -15px;
+}
+
+.border-Accent:after {
+  bottom: -15px;
+  right: -15px;
+} 
+
+.process-panel {
+  flex-flow: column nowrap;
+  align-content:stretch;
+}
+
+.project {
+  max-width: 450px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h1 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.eds-name {
+  margin-top: 175px;
+}
+
+h2 {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+  text-align: center;
+  line-height: 150%;
+}
+
+h5 {
+  margin: 3rem 0;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 1rem;
+}
+
+.interact {
+  margin: 3rem 0;
+  background: #df9803;
+  /* background: linear-gradient(#df9803, #ED5625); */
+  width: 15.5rem;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 2px solid white;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.interact a {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  color: #00061F;
+}
+
+/*---Color Spectrum Border Glow---*/
+.interact:before {
+  content: "";
+  background: linear-gradient(45deg, #F4EAE5, #00a1ff, #00ff8f, #D55252, #00a1ff, #F4EAE5);
+  position: absolute;
+  top: -3px;
+  left:-3px;
+  background-size: 400%;
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+  width: calc(100% + 17px);
+  height: calc(100% + 10px);
+  -webkit-animation: glowing 12s linear infinite;
+  animation: glowing 12s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.interact:hover {
+  background: #00061F;
+  background: linear-gradient(to top left, #15374D, #00061F);
+  border-color: #F1FAEE;
+}
+
+.interact:active {
+  -webkit-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  transform: translateY(6px);
+}
+
+.interact:hover a,
+button.interact:hover,
+.socialMedia a:hover {
+  color:#F1FAEE;
+}
+
+.interact:hover:before {
+  opacity: 1;
+}
+
+.interact:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+@-webkit-keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+/*---End of Color Spectrum Border Glow---*/
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;  
+  display: -webkit-flex; 
+  display: flex;
+  margin: 0;
+  /*!!!These 2 properties below are needed to ensure glow effects are displayed!!!*/
+  position: relative;
+  z-index: 1;
+}
+
+main p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+}
+
+/* --- Arranging Tech skills --- */
+ul .tech-icon {
+  font-size: 2.5rem;
+   margin: 15px 0 15px 0;
+}
+
+ul li span {
+  font-size: 1.3rem;
+  padding-left: 25px;
+  font-weight: 700;
+}
+
+.technologies {
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 0 25px;
+  margin: 45px 0;
+  flex-flow: column nowrap;
+}
+
+.technologies li {
+  width: 200px;
+  text-align: center;
+}
+
+.border-Accent p {
+  padding: 2rem 30px;
+}
+
+.border-Accent-Header {
+  background: #173751;
+  background: linear-gradient(to top left, #000A37, #173751);
+  margin: 0;
+  padding: 30px 20px;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-background { 
+  width: 100%; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  height: 100%; 
+}
+
+.grid-background { 
+  width: 150%;
+  height: 100%;
+  padding: 1px;
+  content: ""; 
+  display: block; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+  -webkit-mask-image: -webkit-gradient(linear, left 90%, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: gradient(linear, left 90%, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  -webkit-transform: perspective(250px) translateZ(0) rotateX(30deg) rotateY(5deg) scale(3, 1);
+  -ms-transform: perspective(250px) translateZ(0) rotateX(30deg) rotateY(5deg) scale(3, 1);
+  transform: perspective(250px) translateZ(0) rotateX(30deg) rotateY(5deg) scale(3, 1);
+  -webkit-background-clip: content-box; 
+  -webkit-backface-visibility: hidden;
+  outline: 1px solid transparent;
+  transform-origin: left center;
+  will-change: transform; 
+  z-index: -1;
+  background-position: center left;
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(45, 154, 146, .4) 3px, transparent 2px), 
+  linear-gradient(to bottom, rgba(45, 154, 146, .4) 3px, transparent 2px);
+}
+
+.project-image {
+  width: 100%;
+  border-bottom: 4px solid #2D9A92;
+}
+
+.button-arrange {
+  padding: 15px 20px;
+  flex-flow: column nowrap;
+}
+
+.button-arrange li {
+  width: 100%;
+}
+
+.contact-field {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.4rem;
+}
+
+input.contact-field,
+textarea.contact-field {
+  background: #F1FAEE;
+  color: black;
+  font-weight: 400;
+  width: 100%;
+  border-radius: 5px;
+  border: 3px solid #2D9A92;
+  line-height: 150%;
+  padding: .2rem 1rem;
+}
+
+.send-button {
+  margin-top: 30px;
+}
+
+.socialMedia {
+  margin: 15px 0;
+  font-size: 3rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.socialMedia a {
+  color:#00C8F8;
+}
+
+.socialMedia li {
+  margin: .5rem .8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.centered-content-body {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+body > section:last-of-type {
+  border: none;
+}
+
+footer {
+  border-top: 4px solid #2D9A92;
+  background: #00061F;
+  color: #8791B1;
+  font-size: 1rem;
+  text-align: center;
+  border-bottom: none;
+  padding: 2rem 30px;
+}
+
+.profilePic {
+  width: 200px;
+  border-radius: 100%;
+  display: block;
+  margin: 20px auto;
+  border: 4px solid #2D9A92;
+}
+
+/*---Header styles---*/
+.hide {
+  display: none;
+}
+
+header {
+  margin: 0;
+  padding: 0 30px;
+  font-size: 3rem;
+  font-weight: 700;
+  background-color: #00061F;
+}
+
+header ul {
+  font-size: 1.5rem;  
+}
+
+header li {
+  padding: 1.75rem 2%;
+}
+
+header a {
+  display: block;
+  color: #00C8F8;
+}
+
+header a:hover {
+  color: #F1FAEE;
+  border-color: #F1FAEE;
+}
+
+.mobile-toggle {
+  padding: 1rem 0;
+}
+
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  margin: .6rem 0;
+  padding: .25rem;
+  font-size: 3rem;
+  border: 2px solid #00C8F8;
+  background: linear-gradient(to top left, #173751, #000A37);
+}
+
+.typing-words {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -25%);
+  -ms-transform: translate(-50%, -25%);
+  transform: translate(-50%, -25%);
+  text-align: center;
+  min-height: 60px;
+  margin: 50px auto;
+  margin-bottom: 10px;
+  color: #2D9A92;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.accent-icon {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 1.5rem;
+  font-size: 5rem;
+  border: 5px solid #2D9A92;
+  border-radius: 100%;
+  background: #00061F;
+}
+
+@media all and (max-width: 700px) {
+  .accent-icon {
+    font-size: 4rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .accent-icon {
+    font-size: 3rem;
+  }
+}
+
+.icon-header {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.text-animation {
+  color: #F1FAEE;
+  background-image: #F1FAEE;
+  background-image: linear-gradient(
+    45deg,
+    #2D9A92,
+    #2496A9,
+    #F4EAE5,
+    #2496A9,
+    #2D9A92
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: textclip 4s linear infinite;
+  animation: textclip 4s linear infinite;
+}
+
+.project-coming-soon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-align: center;
+  background: orange;
+  width: 100%;
+  padding: 5px;
+  z-index: 3;
+}
+
+#new-contact *,
+#new-contact button {
+  position: absolute;
+  top: -99998px;
+  left: -99998px;
+  height: 1px;
+  width: 1px;
+  color: #00061F;
+  border: #00061F;
+  background: #00061F;
+  font-size: 1px;
+}
+
+@-webkit-keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@media all and (max-width: 420px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .interact {
+    margin: 1.5rem 0;
+  }
+}
+
+@media all and (min-width: 550px) {
+  .button-arrange {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+  }
+
+  .button-arrange li {
+    width: 11rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media all and (max-width: 699px) {
+  header ul {
+    display: block;
+    float: none;
+  }
+  
+  header li {
+    display: block;
+    border-top: 2px solid #8791B1;
+  }
+
+  .mobile-toggle {
+    display: block;
+    width: 3rem;
+    float: right;
+    text-align: end;
+  }
+}
+
+@media all and (min-width: 700px) {
+  header ul {
+    float: right;
+    justify-content: flex-end;
+  }
+  
+  header li {
+    display: -webkit-box;
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
+    display: flex;
+  }
+
+  .mobile-toggle {
+    display: none;
+  }
+
+  body > main,
+  body > section {
+    padding-bottom: 100px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .typing-words {
+    top: 5%;
+  }
+}
+
+@media all and (min-width: 1040px) {
+  .projects-panel {
+    max-width: 1040px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
+
+@media all and (min-width: 1600px) {
+  nav {
+    width: 1600px;
+    margin: 0 auto;
+  }
+}

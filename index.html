@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Main page of Ed Park's web development portfolio.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Ed Park | Portfolio</title>
+
+		<!-- external CSS link -->
+		<!--load all Font Awesome styles -->
+		<link href="assets/fontawesome/css/all.css" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet"> 
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script src="js/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="clearfix">
+				<a href="index.html" class="logo">EP</a>
+				<a class="mobile-toggle" href="javascript:void(0);" onclick="toggleMenu()">
+					<i class="fa-solid fa-bars"></i>
+				</a>
+				<ul id="menu-body" class="menu-links">
+					<li><a href="about.html">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#process">Process</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<!--This is for presenting a grid render in background-->
+			<div class="grid-background"></div>
+			<span class="typing-words"></span>
+			<h1 class="eds-name">Edward Park</h1>
+			<h5>Full-Stack Software Engineer</h5>
+			<div class="centered-content-body">
+				<p>Establishing a strong digital presence is imperative for a business's success. It promotes brand awareness and bolsters credibility.</p>
+				<p>
+					Allow me to bring that into fruition by constructing a website for you. Specifically, a website that is fully responsive, accessible, and compatible with all devices ranging from desktop to mobile. If you already have a website but seeking to make updates, I can help with that too.
+				</p>
+				<ul>
+					<li class="interact"><a href="about.html">About Me</a></li>
+				</ul>
+			</div>
+		</main>
+		<section id="skills">
+			<h2>Skills</h2>
+			<section class="flex">
+				<div class="border-Accent">
+					<h4 class="border-Accent-Header">Web Development</h4>
+					<ul class="technologies">
+						<li><i class="tech-icon fa-brands fa-html5"></i><span>HTML</span></li>
+						<li><i class="tech-icon fa-brands fa-css3"></i><span>CSS</span></li>
+						<li><i class="tech-icon fa-brands fa-js"></i><span>JavaScript</span></li>
+						<li><i class="tech-icon fa-solid">C#</i><span>C-Sharp</span></li>
+						<li><i class="tech-icon fa-solid fa-database"></i><span>SQL</span></li>
+					</ul>	
+				</div>	
+			</section>
+		</section>
+		<section id="projects">
+			<h2>Projects</h2>
+			<section class="flex projects-panel">
+				<section class="border-Accent project">
+					<h4 class="border-Accent-Header">Project 1</h4>
+					<span class="project-coming-soon">COMING SOON!!!</span>
+					<img class="project-image" src="assets/img/projectPlaceholder.jpg" alt="Project 1">
+					<ul class="button-arrange">
+						<li class="interact"><a href="#">VIEW LIVE</a></li>
+						<li class="interact"><a href="#">VIEW CODE</a></li>
+					</ul>
+				</section>
+				<section class="border-Accent project">
+					<h4 class="border-Accent-Header">Project 2</h4>
+					<span class="project-coming-soon">COMING SOON!!!</span>
+					<img class="project-image" src="assets/img/projectPlaceholder.jpg" alt="Project 2">
+					<ul class="button-arrange">
+						<li class="interact"><a href="#">VIEW LIVE</a></li>
+						<li class="interact"><a href="#">VIEW CODE</a></li>
+					</ul>
+				</section>
+				<section class="border-Accent project">
+					<h4 class="border-Accent-Header">Project 3</h4>
+					<span class="project-coming-soon">COMING SOON!!!</span>
+					<img class="project-image" src="assets/img/projectPlaceholder.jpg" alt="Project 3">
+					<ul class="button-arrange">
+						<li class="interact"><a href="#">VIEW LIVE</a></li>
+						<li class="interact"><a href="#">VIEW CODE</a></li>
+					</ul>
+					</section>	
+				</section>
+			</section>
+		<section id="process">
+			<h2>The Process</h2>	
+			<section class="centered-content-body process-panel flex">
+				<section class="border-Accent">
+					<div class="border-Accent-Header">
+						<i class="fa-solid fa-user-group icon-header accent-icon text-animation"></i>
+						<h4>Phase 1: Consultation</h4>
+					</div>
+					<p>We will discuss about your needs and vision for the project. The purpose is how we can transform those business ideas into technical solutions.</p>
+				</section>
+				<section class="border-Accent">
+					<div class="border-Accent-Header">
+						<i class="fa-solid fa-handshake icon-header accent-icon text-animation"></i>
+						<h4>Phase 2: Proposal</h4>
+					</div>
+					<p>We will go over and review a detailed website plan. A personalized wire-frame layout will be presented to clarify what content will be on the website. Adjustments can be made to better align with your business goals.
+				</section>
+				<section class="border-Accent">
+					<div class="border-Accent-Header">
+						<i class="fa-solid fa-person-digging icon-header accent-icon text-animation"></i>
+						<h4>Phase 3: Site Development</h4>
+					</div>
+					<p>Consistent communication is crucial to the success of the project. You will receive regular updates as the site is being developed and tested.</p>	
+				</section>
+				<section class="border-Accent">
+					<div class="border-Accent-Header">
+						<i class="fa-solid fa-rocket icon-header accent-icon text-animation"></i>
+						<h4>Phase 4: Site Delivery & Launch</h4>
+					</div>
+					<p>The site will be launched with a domain to host your site.</p>
+				</section>	
+			</section>
+		</section>
+		<section id="contact">
+			<div class="centered-content-body">
+				<h2>Contact Me</h2>
+				<ul class="socialMedia">
+					<li><a href="https://www.linkedin.com/in/edpark0/"><i class="fa-brands fa-linkedin" aria-label="Linkedin" role="link" tabindex="0"></i></a></li>
+					<li><a href="https://github.com/edpark0"><i class="fa-brands fa-github" aria-label="GitHub" role="link" tabindex="0"></i></a></li>
+					<li><a href="https://twitter.com/edpark0"><i class="fa-brands fa-square-twitter" aria-label="Twitter" role="link" tabindex="0"></i></a></li>
+				</ul>
+				<p>All fields marked with * are required</p>
+				<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+					<label class="contact-field" for="name">* Name:</label>
+					<input class="contact-field" id="name" type="text" name="name" required>
+					<label class="contact-field" for="email">* Email:</label>
+					<input class="contact-field" id="email" type="text" name="email" required>
+					<label class="contact-field" for="phone">Phone:</label>
+					<input class="contact-field" id="phone" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####">
+					<label class="contact-field" for="message">* Message:</label>
+					<textarea class="contact-field" id="message" name="message" rows="3" required></textarea>
+					<div data-netlify-recaptcha="true"></div>
+					<button class="interact" type="submit">Submit Message</button>
+				</form>
+				<form id="new-contact" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+					<p class="hidden">
+						<label>
+							Don’t fill this out if you’re human: <input name="bot-field" />
+						</label>
+					</p>
+					<p>
+						<label>
+							Email: <input type="text" name="email" />
+						</label>
+					</p>
+					<p>
+						<label>
+						Message: <textarea name="message"></textarea>
+						</label>
+					</p>
+					<p>
+						<button type="submit">Send</button>
+					</p>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<span>&copy; 2022 Edward Park. All rights reserved</span>
+		</footer>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
