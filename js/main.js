@@ -27,12 +27,12 @@ function validateSubmission() {
   const reCaptchaPrompt = document.querySelector('#recaptchaRequired');
 
   if (isRecaptchaChecked) { 
-    prompt("VALIDATION RETURNED TRUE");
+    alert("VALIDATION RETURNED TRUE");
     reCaptchaPrompt.innerHTML = "";
     reCaptchaPrompt.style.display = "none";
     return true;
   } else {
-    prompt("VALIDATION RETURNED FALSE");
+    alert("VALIDATION RETURNED FALSE");
     reCaptchaPrompt.style.display = "block";
     reCaptchaPrompt.innerHTML = "<span>Please complete reCAPTCHA</span>";
     return false;
