@@ -142,7 +142,7 @@
 					<li><a href="https://twitter.com/edpark0"><i class="fa-brands fa-square-twitter" aria-label="Twitter" role="link" tabindex="0"></i></a></li>
 				</ul>
 				<p>All fields marked with * are required</p>
-				<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+				<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" onsubmit="return validateSubmission();">
 					<label class="contact-field" for="name">* Name:</label>
 					<input class="contact-field" id="name" type="text" name="name" required>
 					<label class="contact-field" for="email">* Email:</label>
