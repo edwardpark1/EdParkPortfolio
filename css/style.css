@@ -524,6 +524,10 @@ header a:hover {
   animation: textclip 4s linear infinite;
 }
 
+.recaptcha {
+  margin-top: 30px;
+}
+
 .project-coming-soon {
   position: absolute;
   top: 50%;
