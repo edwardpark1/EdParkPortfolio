@@ -331,7 +331,8 @@ main {
   linear-gradient(to bottom, rgba(45, 154, 146, .4) 3px, transparent 2px);
 }
 
-.project-image {
+.project-display {
+  display: block;
   width: 100%;
   border-bottom: 4px solid #2D9A92;
 }
