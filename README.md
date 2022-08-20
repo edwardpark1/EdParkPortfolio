@@ -18,7 +18,7 @@ Portfolio site showcasing my latest projects and ways to contact me.
 
 ## Screenshots
 
-![Site Screenshot](/assets/img/site-screenshot.jpg?raw=true "Optional Title")
+![Site Screenshot](assets/img/site-screenshot.jpg?raw=true "Optional Title")
 
 ## Lessons Learned
 
