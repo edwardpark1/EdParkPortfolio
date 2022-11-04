@@ -433,12 +433,14 @@ header li {
   padding: 1.75rem 2%;
 }
 
-header a {
+header a,
+header button{
   display: block;
   color: #00C8F8;
 }
 
-header a:hover {
+header a:hover,
+header button:hover{
   color: #F1FAEE;
   border-color: #F1FAEE;
 }
