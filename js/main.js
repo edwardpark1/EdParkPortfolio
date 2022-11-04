@@ -28,13 +28,12 @@ function validateSubmission() {
 
   if (isRecaptchaChecked) { 
     // alert("VALIDATION RETURNED TRUE");
-    reCaptchaPrompt.innerHTML = "";
     reCaptchaPrompt.style.display = "none";
     return true;
   } else {
     // alert("VALIDATION RETURNED FALSE");
     reCaptchaPrompt.style.display = "inline-block";
-    reCaptchaPrompt.innerHTML = "<span>*Please complete reCAPTCHA*</span>";
+    reCaptchaPrompt.textContent = "*Please complete reCAPTCHA*";
     return false;
   }
 }
