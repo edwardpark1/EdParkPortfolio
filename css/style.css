@@ -439,6 +439,12 @@ header button{
   color: #00C8F8;
 }
 
+header button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
 header a:hover,
 header button:hover{
   color: #F1FAEE;
