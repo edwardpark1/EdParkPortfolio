@@ -1,5 +1,6 @@
 window.addEventListener("resize", resizeToggleMenu);
 window.addEventListener("DOMContentLoaded", resizeToggleMenu);
+document.querySelector("#mobile-menu").addEventListener('click', toggleMenu);
 
 const menu = document.querySelector('#menu-body');
 
