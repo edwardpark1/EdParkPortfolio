@@ -1,9 +1,7 @@
 
-# Ed Park's Portfolio Website
+# Ed Park's Portfolio Website (Old Version)
 
 Portfolio site showcasing my latest projects and ways to contact me.
-
-[Portfolio-Site](https://edpark.netlify.app/)
 
 ## Tech used
 
@@ -28,12 +26,4 @@ Learned about creating layouts and understanding box offset properties. Experime
 
 ## Author
 
-- [@edpark0](https://github.com/edpark0)
-
-
-## Related
-
-Here are some related projects
-
-[Hobby Blog Website](https://github.com/edpark0/HobbyBlogWebsite)
-
+- [@edwardpark1](https://github.com/edwardpark1)
